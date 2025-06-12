@@ -13,7 +13,7 @@ function LoginForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!email || !password) return;
+    if (!email || !password) {};
 
     login(
       { email, password },
