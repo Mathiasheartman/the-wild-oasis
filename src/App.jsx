@@ -54,7 +54,6 @@ function App() {
               <Route path="account" element={<Account />} />
             </Route>
 
-            <Route path="dashboard" element={<Dashboard />} />
             <Route path="login" element={<Login />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
