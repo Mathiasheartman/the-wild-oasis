@@ -10,6 +10,7 @@ function LoginForm() {
   const [email, setEmail] = useState("testuser@gkjh.com");
   const [password, setPassword] = useState("1234567890");
   const { login, isLoading } = useLogin();
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
