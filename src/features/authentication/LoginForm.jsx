@@ -13,7 +13,9 @@ function LoginForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!email || !password) {};
+    if (!email || !password) {
+      navigate("/dashboard", { replace: true });
+    };
 
     login(
       { email, password },
